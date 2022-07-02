@@ -6,29 +6,29 @@
  */
 int main(void)
 {
-int number_left;
-int number_right;
+int i, j;
 
-for (number_left = 48; number_right <= 78; number_left++)
+j = 48;
+i = 48;
+
+while (i < 58)
 {
-for (number_right = number_left + 1 ; number_right <= 78; number_right++)
-{
+	j = i + 1;
+	while (j < 58)
+	{
+		putchar(i);
+		putchar(j);
 
-putchar(number_left);
-putchar (number_right);
+		if (i < 56 || j < 57)
+		{
+			putchar(44);
+			putchar(32);
+		}
+		j++;
+	}
 
-if ((number_left == 56) && (number_right == 78))
-{
-break;
+	i++;
 }
-
-putchar(',');
-putchar (' ');
-
-}
-}
-
-putchar('\n');
-  
+putchar(10);
 return (0);
 }
