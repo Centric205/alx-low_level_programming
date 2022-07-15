@@ -1,1 +1,1 @@
-My Ox06 Pointers , Arrays and String task
+Task: Ox06 Pointers_Arrays_and_String 
